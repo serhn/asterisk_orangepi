@@ -12,6 +12,9 @@ aclocal && autoconf && automake -a
 ./configure
 make
 make install
+cp etc/dongle.conf /etc/asterisk/
+cd ..
+rm -rf asterisk-chan-dongle-asterisk13
 chown asterisk:asterisk /etc/asterisk/dongle.conf
 chmod u=rwX,g=rX,o= /etc/asterisk/dongle.conf
 echo 'KERNEL=="ttyUSB*", MODE="0666", OWNER="asterisk", GROUP="dialout"' > /etc/udev/rules.d/92-dongle.rules
