@@ -1,6 +1,5 @@
 #!/bin/sh
-apt-get install asterisk
-apt-get install asterisk-dev
+apt-get install -y asterisk asterisk-dev
 cd /usr/src/
 wget https://github.com/oleg-krv/asterisk-chan-dongle/archive/asterisk13.zip
 
