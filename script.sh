@@ -13,7 +13,7 @@ cd asterisk-chan-dongle-16-master
 
 
 ./bootstrap
-./configure --with-astversion=16.2
+./configure --with-astversion=16.2.1
 make
 make install
 
